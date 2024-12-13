@@ -2,7 +2,7 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
     "manifestVersion": "1.17",
     "version": "1.0.0",
-    "id": "${{TEAMS_APP_ID}}",
+    "id": "5bc1ac22-7dbb-4ab5-89b9-d839d4caff0f",
     "developer": {
         "name": "Teams App, Inc.",
         "websiteUrl": "https://www.example.com",
@@ -24,7 +24,7 @@
     "accentColor": "#FFFFFF",
     "bots": [
         {
-            "botId": "${{BOT_ID}}",
+            "botId": "71742bd7-0411-4b84-8487-d66a66dca368",
             "scopes": [
                 "personal",
                 "team",
@@ -34,13 +34,17 @@
             "isNotificationOnly": false,
             "commandLists": [
                 {
-                  "scopes": ["personal", "team", "groupChat"],
-                  "commands": [
-                      {
-                          "title": "Hi",
-                          "description": "Say hi to the bot."
-                      }
-                  ]
+                    "scopes": [
+                        "personal",
+                        "team",
+                        "groupChat"
+                    ],
+                    "commands": [
+                        {
+                            "title": "Hi",
+                            "description": "Say hi to the bot."
+                        }
+                    ]
                 }
             ]
         }
@@ -52,5 +56,7 @@
         "identity",
         "messageTeamMembers"
     ],
-    "validDomains": []
+    "validDomains": [
+        "https://teamsapp-oxiv.onrender.com"
+    ]
 }
