@@ -2,10 +2,10 @@
     "$schema": "https://developer.microsoft.com/en-us/json-schemas/teams/v1.17/MicrosoftTeams.schema.json",
     "manifestVersion": "1.17",
     "version": "1.0.0",
-    "id": "71742bd7-0411-4b84-8487-d66a66dca368",
+    "id": "${{TEAMS_APP_ID}}",
     "developer": {
-        "name": "WO Teams App, Inc.",
-        "websiteUrl": "https://teamsapp-oxiv.onrender.com",
+        "name": "Teams App, Inc.",
+        "websiteUrl": "https://www.example.com",
         "privacyUrl": "https://www.example.com/privacy",
         "termsOfUseUrl": "https://www.example.com/termofuse"
     },
@@ -14,8 +14,8 @@
         "outline": "outline.png"
     },
     "name": {
-        "short": "teamsapp test",
-        "full": "WO teamsapp"
+        "short": "teamsapp${{APP_NAME_SUFFIX}}",
+        "full": "full name for teamsapp"
     },
     "description": {
         "short": "short description for teamsapp",
@@ -24,7 +24,7 @@
     "accentColor": "#FFFFFF",
     "bots": [
         {
-            "botId": "d9111f6b-463a-4c9f-87b5-71c090511788",
+            "botId": "${{BOT_ID}}",
             "scopes": [
                 "personal",
                 "team",
@@ -56,7 +56,5 @@
         "identity",
         "messageTeamMembers"
     ],
-    "validDomains": [
-        "https://teamsapp-oxiv.onrender.com"
-    ]
+    "validDomains": []
 }
